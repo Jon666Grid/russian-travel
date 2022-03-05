@@ -1,0 +1,17 @@
+.place {
+   display: grid;
+   grid-template-areas:
+   "title website" 
+   "img text";
+}
+
+@media all and (min-width: 320px) and (max-width:425px) {
+   .place {
+      display: grid;
+      grid-template-areas:
+      "title"
+      "website"
+      "img" 
+      "text";
+   }
+}
