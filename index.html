@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="./fonts/font.css">
     <title>Путешествия по России</title>
 </head>
 <body class="page">
@@ -12,19 +13,19 @@
     <header class="header">
         <img class="header__logo" src="./images/header-logo.svg" alt="лого" />
         <div class="header__lang">
-        <a class="header__lang-link" href="#">Ru</a>
-        <a class="header__lang-link" href="#">En</a>
+        <a class="header__lang-link header__lang-link_hover" href="#">Ru</a>
+        <a class="header__lang-link header__lang-link_hover" href="#">En</a>
         </div>
       </header>
 
       <main class="content">
           
-        <div class="lead">
+        <section class="lead">
             <h1 class="lead__title">Путешествия по&nbsp;России</h1>
             <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
             <img class="lead__image" src="./images/lead-polka.jpg" alt="нижния полка в поезде" />
             <p class="lead__caption">ваша полка — верхняя</p>
-        </div>
+        </section>
 
         <section class="intro">
             <h2 class="intro__title">Чего мы&nbsp;там не&nbsp;видели?</h2>
@@ -81,7 +82,7 @@
             </li>
           </ul>
 
-          <div class="places">
+          <section class="places">
             <article class="place">
               <h2 class="place__title">Куршская коса</h2>
               <img src="./images/place-kosa.jpg" alt="Курская коса" class="place__img">
@@ -96,7 +97,7 @@
                 <p class="place__paragraph">На&nbsp;этом Калининградская область не&nbsp;заканчивается. Для путешественника и&nbsp;исследователя там&nbsp;же по&nbsp;соседству&nbsp;&mdash; самая западная точка России, Балтийская коса,&nbsp;&mdash; и&nbsp;немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в&nbsp;спокойствие природы и&nbsp;запах стального, прохладного моря.</p>
               </div>
             </article>
-          </div>
+          </section>
           <div class="places">
             <article class="place">
               <h2 class="place__title">Кольский</h2>
@@ -170,20 +171,25 @@
           </div>
 
           <section class="cover">
-            <div class="cover__overlay">
+            <a class="cover__overlay" href="#">
               <h3 class="cover__title">До&nbsp;Байкала 
                 &laquo;на&nbsp;собаках&raquo;</h3>
               <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.</p>
-            </div>
+            </a>
           </section>
 
           <footer class="footer">
-              <a class="footer__link" href="#">Карты</a>
-              <a class="footer__link" href="#">Погода</a>
-              <a class="footer__link" href="#">Расписание</a>
-              <a class="footer__link" href="#">Календарь</a>
-              <a class="footer__link" href="#">Путешествия</a>
-              <p class="footer__copyright">&copy; 2022. Гридин Евгений</p>
+            <nav>
+              <ul class="footer__column">
+              <li><a class="footer__column-link" href="#">Карты</a></li>
+              <li><a class="footer__column-link" href="#">Погода</a></li>
+              <li><a class="footer__column-link" href="#">Расписание</a></li>
+              <li><a class="footer__column-link" href="#">Календарь</a></li>
+              <li><a class="footer__column-link" href="#">Путешествия</a></li>
+              <li><p class="footer__copyright">&copy; 2022. Гридин Евгений</p></li>
+            </ul>
+            </nav>
+              
           </footer>
 
       </main>

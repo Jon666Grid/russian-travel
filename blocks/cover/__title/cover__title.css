@@ -3,15 +3,16 @@
    font-size: 72px;
    line-height: 1em;
    font-weight: 900;
-   color: #FFFFFF;
    text-align: center;
-   position: relative;
-   margin: 245px auto 0px;
+   margin-top: 245px;
+   margin-bottom: 40px;
+   color: #FFFFFF;
+   z-index: 1;
 }
 
 @media all and (min-width: 767px) and (max-width: 1024px) {
    .cover__title {
-      margin-top: 197px;
+      margin-top: 195px;
    }
 }
 
@@ -26,5 +27,6 @@
       width: 280px;
       font-size: 32px;
       margin-top: 34px;
+      margin-bottom: 20px;
    }
 }
