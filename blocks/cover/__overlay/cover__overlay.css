@@ -1,0 +1,27 @@
+.cover__overlay {
+   background-image: url('../../../images/cover-trains.jpg');
+   background-size: contain;
+   height: 100vh;
+   position: relative;
+   align-items: center;
+   text-decoration:none;
+   display: flex;
+   flex-direction: column;
+   z-index: 0;
+}
+
+.cover__overlay:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,0.8);
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+}
+
+.cover__overlay:hover::before {
+   opacity: 1;
+}
